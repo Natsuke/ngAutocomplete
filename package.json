@@ -1,0 +1,29 @@
+{
+  "name": "ng-autocomplete",
+  "version": "1.0.0",
+  "description": "A simple directive for adding google places autocomplete to a textbox element.",
+  "main": "src/ngAutocomplete.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Natsuke/ngAutocomplete.git"
+  },
+  "keywords": [
+    "google",
+    "place",
+    "address",
+    "angular"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Natsuke/ngAutocomplete/issues"
+  },
+  "homepage": "https://github.com/Natsuke/ngAutocomplete#readme",
+  "dependencies": {}
+}
