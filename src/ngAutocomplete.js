@@ -1,8 +1,4 @@
-/* global google */
-
-import angular from 'angular'
-
-'use strict'
+/* global google, angular*/
 
 /**
  * A directive for adding google places autocomplete to a text box
@@ -59,7 +55,7 @@ angular.module('ngAutocomplete', [])
               opts.types.push(scope.options.types)
               scope.gPlace.setTypes(opts.types)
             } else {
-              scope.gPlace.setTypes([])
+              scope.gPlace.setTypes(['(cities)'])
             }
 
             if (scope.options.bounds) {
@@ -88,8 +84,6 @@ angular.module('ngAutocomplete', [])
             if (result.address_components !== undefined) {
               scope.$apply(function () {
                 scope.details = result
-
-                controller.$setViewValue(element.val())
               })
             } else {
               if (watchEnter) {
